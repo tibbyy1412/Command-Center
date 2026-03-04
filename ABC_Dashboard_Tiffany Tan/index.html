@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Dashboard - Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">ABC Dashboard</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="dashboard">
+            <h1>Dashboard</h1>
+            <p>Welcome to the Inventory Management System</p>
+
+            <!-- Add Inventory Form -->
+            <div class="form-section">
+                <h2>Add New Item</h2>
+                <form id="inventoryForm">
+                    <div class="form-group">
+                        <label for="itemName">Item Name:</label>
+                        <input type="text" id="itemName" placeholder="Enter item name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemQuantity">Quantity:</label>
+                        <input type="number" id="itemQuantity" placeholder="Enter quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPrice">Price:</label>
+                        <input type="number" id="itemPrice" placeholder="Enter price" min="0" step="0.01" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Add Item</button>
+                </form>
+            </div>
+
+            <!-- Chart Visualization -->
+            <div class="chart-section">
+                <h2>Inventory Visualization</h2>
+                <div class="chart-container">
+                    <canvas id="inventoryChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Inventory List -->
+            <div class="inventory-section">
+                <div class="section-header">
+                    <h2>Current Inventory</h2>
+                    <button id="clearAllBtn" class="btn-danger" style="display: none;">Clear All Items</button>
+                </div>
+                <div id="inventoryList" class="inventory-list">
+                    <p class="empty-message">No items yet. Add an item to get started!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

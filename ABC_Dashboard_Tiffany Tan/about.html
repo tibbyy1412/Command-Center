@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - ABC Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">ABC Dashboard</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="profile">
+            <h1>Developer Profile</h1>
+            
+            <!-- Profile Information -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">T</div>
+                    <div class="profile-info">
+                        <h2 id="userName">Tiffany Tan</h2>
+                        <p id="userRole">Developer Consultant</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio Section -->
+            <div class="bio-section">
+                <h3>About Me</h3>
+                <div class="bio-content">
+                    <p>
+                        Hi, I'm Tiffany. Developer Consultant with over 2 years of experience designing, building, and optimizing scalable digital solutions across startups and enterprise environments. Specializes in full-stack development, system architecture, and technical strategy, helping organizations translate business objectives into resilient, high-performance technology.
+                    </p>
+                    
+                    <p>
+                        Proven track record of leading end-to-end delivery, from requirements analysis and architecture design to deployment and post-launch optimization. Experienced in modern frameworks and cloud-native environments, with deep expertise in JavaScript ecosystems (React, Node.js), Python-based services, RESTful APIs, and distributed systems. Strong advocate of clean architecture, DevOps best practices, and automation-driven workflows.
+                    </p>
+                    
+                    <p>
+                        Trusted advisor to product teams and executives, bridging the gap between technical execution and business strategy. Known for transforming legacy systems into scalable platforms, accelerating time-to-market, and reducing operational overhead through thoughtful engineering decisions.
+                    </p>
+                    
+                    <p>
+                        Collaborative, detail-oriented, and outcome-driven, with a reputation for delivering solutions that are not only functional, but future-ready.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Profile Details -->
+            <div class="profile-details">
+                <h3>Professional Background</h3>
+                <div class="detail-item">
+                    <label>Title:</label>
+                    <span id="userTitle">Developer Consultant</span>
+                </div>
+                <div class="detail-item">
+                    <label>Experience:</label>
+                    <span id="userExp">2+ Years</span>
+                </div>
+                <div class="detail-item">
+                    <label>Specialties:</label>
+                    <span id="userSpec">Full-Stack Development, System Architecture, Technical Strategy</span>
+                </div>
+                <div class="detail-item">
+                    <label>Tech Stack:</label>
+                    <span id="userTech">JavaScript, React, Node.js, Python, RESTful APIs, Cloud-Native</span>
+                </div>
+            </div>
+
+            <!-- Inventory Summary -->
+            <div class="summary-section">
+                <h3>Inventory Management System</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-label">Total Items</p>
+                        <p class="stat-value" id="totalItems">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Total Value</p>
+                        <p class="stat-value" id="totalValue">$0.00</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Total Quantity</p>
+                        <p class="stat-value" id="totalQty">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clear Data Button -->
+            <div class="action-section">
+                <button id="clearDataBtn" class="btn-danger">Clear All Data</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
